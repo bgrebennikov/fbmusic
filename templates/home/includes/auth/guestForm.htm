@@ -1,0 +1,11 @@
+<p class="auth-title">Авторизация</p>
+<form action="" method="POST" class="auth-form">
+    {% csrf_token %}
+    <input type="text" class="auth_login" name="login" placeholder="Логин или Email">
+    <input type="password" class="auth_password" name="password" placeholder="Пароль">
+    <button type="button" class="signin_btn">Войти</button>
+</form>
+<div class="auth-help-btns">
+    <a href="#" class="signup_btn">Регистрация</a>
+    <a href="#">Восстановить пароль</a>
+</div>

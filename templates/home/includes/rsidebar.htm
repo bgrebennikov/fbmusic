@@ -1,0 +1,8 @@
+<div class="auth">
+    {% if user.is_authenticated %}
+        {% include "./auth/loggedin.htm" %}
+    {% else %}
+        {% include "./auth/guestForm.htm" %}
+    {% endif %}
+
+</div>

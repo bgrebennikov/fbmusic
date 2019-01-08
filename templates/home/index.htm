@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+Главная
+{% endblock %}
+
+
+
+{% block header %}
+
+<div class="header">
+   <div class="logo">
+        <img src="{% static 'img/logo.png' %}" alt="">
+    </div>
+    <div class="h_navbar">
+        <ul>
+            <a href="#">Главная</a>
+            <a href="#">Новости</a>
+            <a href="#">Музыка</a>
+            <a href="#">Радио</a>
+        </ul>
+    </div>
+</div>
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="wrapper">
+    <div class="l-sidebar">
+        {% include "./includes/lsidebar.htm" %}
+    </div>
+    <div class="banner">
+        {% include "./includes/banner.htm" %}
+    </div>
+    <div class="r-sidebar">
+        {% include "./includes/rsidebar.htm" %}
+    </div>
+</div>
+
+<div class="content">
+    {% include "./includes/content.htm" %}
+</div>
+
+<div class="modalWindows">
+    {% include './includes/mw.htm' %}
+</div>
+
+{% endblock %}

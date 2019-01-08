@@ -1,0 +1,31 @@
+<div class="section-title">
+    Последнее
+</div>
+<div class="last-posts">
+    <div class="track-list">
+        {% for i in tracks %}
+        <div class="track">
+            <div class="track-thumb">
+                <div class="track-image" style="background: url('{{i.img.url}}');
+                background-position: center;
+                background-size: cover;"></div>
+                <div class="track-overlay playTrack"></div>
+            </div>
+            <div class="track-data">
+                <div class="track-name">
+                    <div class="tn_artist">{{i.artist}}</div>
+                    <div class="tn_track">{{i.trackName}}</div>
+                </div>
+                <div class="track_currentTime">01:13</div>
+                <input type="range" step="0.1" max="100" value="0" class="td_progress-bar">
+                <audio class="audiofile" src="{{i}}"></audio>
+            </div>
+        </div>
+        {% endfor %}
+        
+        
+        
+        
+        
+    </div>
+</div>

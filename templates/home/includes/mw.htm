@@ -1,0 +1,25 @@
+<div class="signup-window simple-mw mw">
+    <div class="simple-messageBox">
+        <div class="smw_title">
+            Регистрация
+            <div class="close_window_btn">&times;</div>
+        </div>
+        <div class="smw_content">
+            {% csrf_token %}
+            <input type="text" class="mw_username" name="username" placeholder="Логин">
+            <input type="email" class="mw_email" name="email" placeholder="Email">
+            <input type="password" class="mw_password" name="password" placeholder="Пароль">
+            <div class="err_messages"></div>
+            <a href="#">
+                <div class="mw_submit">Регистрация</div>
+            </a>
+        </div>
+        <div class="success_auth_message">
+            <div class="sam_title">
+                Вы зарегистрировались!
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mw-overlay"></div>
